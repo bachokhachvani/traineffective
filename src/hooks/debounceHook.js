@@ -15,5 +15,5 @@ export function useDebounce(value, timeout, callback) {
       const newTimer = setTimeout(callback, timeout);
       setTimer(newTimer);
     }
-  }, [value]);
+  }, [value]); // eslint-disable-line
 }
