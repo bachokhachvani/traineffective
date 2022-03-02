@@ -17,6 +17,10 @@ function SearchBar({ placeholder }) {
       setData([]);
     }
   };
+  const clickHandler = () => {
+    setData([]);
+    setSearchQuery("");
+  };
 
   const prepareSearchQuery = (query) => {
     const url = `https://api.github.com/search/users?q=${query}`;
@@ -44,6 +48,9 @@ function SearchBar({ placeholder }) {
           value={searchQuery}
           onChange={changeHandler}
         ></input>
+        <button className="button" onClick={clickHandler}>
+          X
+        </button>
       </div>
       {isLoading && (
         <div className="dataResult">
