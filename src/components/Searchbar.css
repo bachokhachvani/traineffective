@@ -122,3 +122,32 @@ img {
     width: 30px;
   }
 }
+
+@media (max-height: 400px) {
+  .search input {
+    width: 500px;
+    height: 13px;
+    font-size: 11px;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+  }
+  .text {
+    text-align: center;
+    font-size: 11px;
+  }
+  .dataItem p {
+    font-size: 11px;
+  }
+  .dataResult {
+    max-height: 100px;
+  }
+  .dataResult .dataItem {
+    width: auto;
+  }
+  .button {
+    width: 30px;
+  }
+}
